@@ -1,5 +1,6 @@
 import {Recipe} from "./Recipe";
 import RecipeCard from "./RecipeCard";
+import './RecipeGallery.css'
 
 type RecipeGalleryProps = {
     recipeCards: Recipe[],

@@ -6,7 +6,7 @@ import useRecipes from "./useRecipes";
 function App() {
     const {recipeCards} = useRecipes()
     return (
-        <div >
+        <div className="App">
             <header>
                 <h1>Welcome to World of Recipes</h1>
                 <div>RecipeGallery</div>
