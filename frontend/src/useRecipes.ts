@@ -10,13 +10,12 @@ export default function useRecipes() {
     }, [])
 
     function loadAllRecipe() {
-        axios.get("api/recipes")
+        axios.get("/api/recipes")
             .then((getAllRecipesResponse) => {
                 setRecipes(getAllRecipesResponse.data)
             }).catch((error) => {
             console.error(error)
         })
-
     }
 return {recipeCards}
 }
