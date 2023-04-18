@@ -2,6 +2,7 @@ package de.worldofrecipes.backend;
 
 import de.worldofrecipes.backend.model.Recipe;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,4 +21,8 @@ public class RecipeController {
     public List<Recipe> getAllRecipes() {
         return recipeService.getAllRecipes();
     }
+
+@PostMapping
+public Recipe addRecipe(Recipe recipe){
+    return recipeService.addRecipe(recipe);}
 }
