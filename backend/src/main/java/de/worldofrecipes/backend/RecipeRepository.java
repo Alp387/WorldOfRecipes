@@ -22,4 +22,8 @@ public class RecipeRepository {
     public List<Recipe> getAllRecipes() {
         return new ArrayList<>(recipeMap.values());
     }
+
+    public Recipe addRecipe(Recipe recipe) {
+        return recipeMap.put(recipe.id(), recipe);
+    }
 }
